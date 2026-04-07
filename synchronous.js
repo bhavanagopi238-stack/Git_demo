@@ -1,0 +1,37 @@
+const fs= require('fs')
+
+console.log("first")
+console.log("second")
+console.log("third")
+setTimeout(() => {
+    console.log("executed")
+},(1000))
+fs.writeFile('./data.txt',"new content added",(err) => {
+    if(err){
+        console.log("error occured")
+    }
+console.log("file created successfully")
+
+})
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
+console.log("first")
+console.log("second")
+console.log("third")
